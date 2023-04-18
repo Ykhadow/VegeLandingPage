@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "primaryFont";
+  src: url("MotleyForcesRegular-w1rZ3.ttf");
+}
+
+@tailwind base;
+
+* {
+  font-family: "primaryFont";
+}
+
+html {
+  margin: 0;
+  height: 100%;
+}
+
+.background {
+  background: linear-gradient(to top, #0c3a01ba, #0d4101ba),
+    url("bgImage.jpg") no-repeat top center;
+  height: 40rem;
+  width: 100%;
+  color: #ffffff;
+  margin-top: 40px;
+}
+
+.card {
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  fill: rgb(59, 59, 59);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  fill: #15803d;
+}
